@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondo.jpg'); /* Cambia 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover; /* Esto hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(0, 0, 0); /* Cambia el color del texto si es necesario para que sea legible */
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(240, 54, 147, 0.8), rgba(221, 224, 5, 0.8)); /* Degradado de rosa a naranja */
+    padding: 20px; /* Aumentar el padding para más espacio */
+    border-radius: 15px; /* Bordes más redondeados */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    transition: transform 0.3s; /* Efecto de transformación al pasar el mouse */
+}
+
+.container:hover {
+    transform: scale(1.07); /* Aumenta el tamaño al pasar el mouse */
+}
+h1 {
+    color: #000000;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Aumentar el tamaño de la fuente */
+    font-weight: bold; /* Hacer el texto más grueso */
+    transition: background-color 0.2s, transform 0.2s; /* Añadir transición para el efecto de escala */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+button#btn-si {
+    background: linear-gradient(45deg, #4caf50, #66bb6a); /* Degradado */
+    color: rgb(14, 13, 13);
+}
+
+button#btn-si:hover {
+    background-color: #45a049;
+    border: 2px solid #45a049; /* Borde verde al pasar el cursor */
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el cursor */
+}
+
+button#btn-no {
+    background: linear-gradient(45deg, #f44336, #ef5350); /* Degradado */
+    color: rgb(8, 8, 8);
+}
+
+button#btn-no:hover {
+    background-color: #e53935;
+    border: 2px solid #e53935; /* Borde rojo al pasar el cursor */
+    transform: scale(1.05); /* Aumentar el tamaño al pasar el cursor */
+}
+
+button:active {
+    transform: scale(0.95); /* Efecto de "presionar el botton*/
+    
+}
